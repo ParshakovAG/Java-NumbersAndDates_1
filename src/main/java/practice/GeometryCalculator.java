@@ -5,7 +5,7 @@ public class GeometryCalculator {
     // метод должен использовать абсолютное значение radius
     public static double getCircleSquare(double radius) {
 
-        return Math.PI * radius * radius;
+        return Math.PI * Math.pow(Math.abs(radius), 2);
     }
 
     // если значение radius меньше 0, метод должен вернуть -1
