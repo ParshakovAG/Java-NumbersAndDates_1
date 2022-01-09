@@ -1,5 +1,4 @@
 package practice;
-
 import java.util.Scanner;
 
 public class TrucksAndContainers {
@@ -39,8 +38,8 @@ public class TrucksAndContainers {
                 System.out.println("\tКонтейнер: " + container);
             }
         }
-        System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков" + " - " + truck + " шт. "
-                + System.lineSeparator() + "контейнеров" + " - " + container + " шт. ");
+        System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков" + " - " + truck + " шт."
+                + System.lineSeparator() + "контейнеров" + " - " + container + " шт.");
 
         // пример вывода при вводе 2
         // для отступа используйте табуляцию - \t
