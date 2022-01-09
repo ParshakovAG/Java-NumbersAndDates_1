@@ -26,10 +26,11 @@ public class TrucksAndContainers {
         for (int i = 1; i <= box; i++) {
 
             System.out.println("\t\tЯщик: " + i);
-            if (i % CONTAINERS_IN_TRUCK * BOXES_IN_CONTAINER == 0) {
+
+            if (i % (CONTAINERS_IN_TRUCK * BOXES_IN_CONTAINER) == 0) {
                 truck += 1;
 
-                System.out.println("\tГрузовик: " + truck);
+                System.out.println("Грузовик: " + truck);
 
             }
             if (i % BOXES_IN_CONTAINER == 0) {
