@@ -13,9 +13,7 @@ public class TrucksAndContainers {
         Scanner scanner = new Scanner(System.in);
         int box = scanner.nextInt();
         if (box == 0) {
-             if (box == 27)
-                container--;
-
+             
             container--;
             truck--;
             
@@ -42,8 +40,8 @@ public class TrucksAndContainers {
 
                 System.out.println("\tКонтейнер: " + container);
 
-                if (i % BOXES_IN_CONTAINER == 27) {
-                    container += 0;
+                if (i % BOXES_IN_CONTAINER == box) {
+                    continue;
                 }
             }
         }
