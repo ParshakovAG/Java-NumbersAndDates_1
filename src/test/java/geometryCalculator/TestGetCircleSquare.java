@@ -27,7 +27,7 @@ public class TestGetCircleSquare {
     @Test
     @DisplayName("Передано отрицательное целое число -20")
     void testGetCircleSquareWithNegativeIntegerNumber() {
-        double expected = -1;
+        double expected = 1256.6370614359173;
         Assertions.assertEquals(expected, GeometryCalculator.getCircleSquare(-20), DELTA);
     }
 

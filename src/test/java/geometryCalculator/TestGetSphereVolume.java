@@ -27,7 +27,7 @@ public class TestGetSphereVolume {
     @Test
     @DisplayName("Передано отрицательное целое число -20")
     void testGetSphereVolumeWithNegativeIntegerNumber() {
-        double expected = -1;
+        double expected = 33510.32163829113;
         Assertions.assertEquals(expected, GeometryCalculator.getSphereVolume(-20), DELTA);
     }
 
