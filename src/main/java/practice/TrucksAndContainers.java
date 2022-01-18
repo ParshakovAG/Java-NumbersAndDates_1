@@ -13,8 +13,12 @@ public class TrucksAndContainers {
         Scanner scanner = new Scanner(System.in);
         int box = scanner.nextInt();
         if (box == 0) {
+             if (box == 27)
+                container--;
+
             container--;
             truck--;
+            
         } else {
 
             System.out.println("Грузовик: " + truck);
@@ -32,10 +36,15 @@ public class TrucksAndContainers {
                 System.out.println("Грузовик: " + truck);
 
             }
+            
             if (i % BOXES_IN_CONTAINER == 0) {
                 container += 1;
 
                 System.out.println("\tКонтейнер: " + container);
+
+                if (i % BOXES_IN_CONTAINER == 27) {
+                    container += 0;
+                }
             }
         }
         System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков" + " - " + truck + " шт."
