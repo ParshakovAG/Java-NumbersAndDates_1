@@ -34,15 +34,14 @@ public class TrucksAndContainers {
                 System.out.println("Грузовик: " + truck);
 
             }
+
+            if (BOXES_IN_CONTAINER == box)
+                    continue;
             
             if (i % BOXES_IN_CONTAINER == 0) {
                 container += 1;
 
                 System.out.println("\tКонтейнер: " + container);
-
-                if (i % BOXES_IN_CONTAINER == box) {
-                    continue;
-                }
             }
         }
         System.out.println("Необходимо:" + System.lineSeparator() + "грузовиков" + " - " + truck + " шт."
