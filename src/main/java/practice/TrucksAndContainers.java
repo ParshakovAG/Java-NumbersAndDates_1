@@ -35,8 +35,9 @@ public class TrucksAndContainers {
 
             }
 
-            if (BOXES_IN_CONTAINER == box)
+            if (BOXES_IN_CONTAINER == box) {
                     continue;
+            }
             
             if (i % BOXES_IN_CONTAINER == 0) {
                 container += 1;
